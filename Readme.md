@@ -5,4 +5,4 @@ A travel app for iOS & Android built using React Native / Expo
 
 ### Screenshots
 
-Soon
+![Alt text](./previews/preview-1.png)
