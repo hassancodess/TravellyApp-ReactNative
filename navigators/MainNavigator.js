@@ -2,7 +2,7 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 // Navigators
 import OnboardingNavigator from './onboarding/OnboardingNavigator'
-import SignupNavigator from './signup/signupNavigator'
+import SignupNavigator from './signup/SignupNavigator'
 
 const Stack = createNativeStackNavigator()
 const MainNavigator = () => {

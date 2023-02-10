@@ -6,7 +6,7 @@ import Signup2 from '../../screens/signup/Signup2'
 import Signup3 from '../../screens/signup/Signup3'
 import Signup4 from '../../screens/signup/Signup4'
 const Stack = createNativeStackNavigator()
-const index = () => {
+const SignupNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -22,4 +22,4 @@ const index = () => {
   )
 }
 
-export default index
+export default SignupNavigator
