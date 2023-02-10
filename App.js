@@ -5,7 +5,7 @@ import { useFonts } from 'expo-font'
 import * as SplashScreen from 'expo-splash-screen'
 import { NavigationContainer } from '@react-navigation/native'
 // Navigators
-import OnboardingNavigator from './navigators/onboarding/OnboardingNavigator'
+import MainNavigator from './navigators/MainNavigator'
 
 SplashScreen.preventAutoHideAsync()
 
@@ -32,17 +32,9 @@ export default function App() {
       <StatusBar style='auto' />
       <View onLayout={onLayoutRootView} style={{ flex: 1 }}>
         <NavigationContainer>
-          <OnboardingNavigator />
+          <MainNavigator />
         </NavigationContainer>
       </View>
-      {/* <View
-        className='flex-1 items-center justify-center bg-slate-900'
-        onLayout={onLayoutRootView}
-      >
-        <Text className='text-9xl font-psemibold p-3'>
-          Open up App.js to start working on your app!
-        </Text>
-      </View> */}
     </>
   )
 }
