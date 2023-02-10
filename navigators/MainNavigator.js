@@ -11,7 +11,7 @@ const MainNavigator = () => {
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName='Onboarding'
+      initialRouteName='Signup'
     >
       <Stack.Screen name='Onboarding' component={OnboardingNavigator} />
       <Stack.Screen name='Signup' component={SignupNavigator} />
