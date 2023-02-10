@@ -1,16 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { Text, View } from 'react-native'
+import { styled } from 'nativewind'
+
+const StyledView = styled(View)
 
 const Container = ({ children, styles }) => {
   return (
-    <View
-      className={`flex-1 flex-col justify-between items-center px-4 my-10 ${styles}`}
-    >
+    <StyledView className={`flex-1 flex-col items-center px-4 py-10 ${styles}`}>
       {children}
-    </View>
+    </StyledView>
   )
 }
 
 export default Container
-
-const styles = StyleSheet.create({})
