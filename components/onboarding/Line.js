@@ -14,7 +14,7 @@ const Line = ({ variant }) => {
   }
   return (
     <StyledView
-      className={`h-1 rounded-full ${variantStyles[variant]}`}
+      className={`h-0.5 rounded-full ${variantStyles[variant]}`}
     ></StyledView>
   )
 }
