@@ -8,6 +8,9 @@ import { useNavigation } from '@react-navigation/native'
 
 const WelcomeScreen = () => {
   const navigation = useNavigation()
+  const navigateToSignupScreen = () => {
+    navigation.navigate('Signup')
+  }
   return (
     <View className='flex-1 flex-col items-center justify-around px-4 py-10'>
       {/* Logo Container*/}
@@ -24,7 +27,12 @@ const WelcomeScreen = () => {
       </View>
       {/* Buttons Container */}
       <View className='w-full '>
-        <Button title='Sign Up' bgColor='bg-peach300' txtColor='text-white' />
+        <Button
+          title='Sign Up'
+          bgColor='bg-peach300'
+          txtColor='text-white'
+          onPress={navigateToSignupScreen}
+        />
         <Button title='Login' bgColor='bg-white' txtColor='text-peach300' />
       </View>
     </View>
