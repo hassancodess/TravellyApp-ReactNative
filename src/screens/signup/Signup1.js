@@ -7,12 +7,12 @@ import IconButton from '../../components/shared/IconButton'
 // Icons
 import { Entypo } from '@expo/vector-icons'
 // Constants
-import { colors } from '../../assets/Constants'
+import { colors } from '../../../assets/Constants'
 
 const Signup1 = () => (
   <Container styles='justify-between'>
     <View className='flex flex-col items-center '>
-      <View className='mb-16 bg-green'>
+      <View className='mb-16'>
         {/* Lines Container*/}
         <View className={`flex-row overflow-hidden justify-center`}>
           <Line variant={'primary4'} />
