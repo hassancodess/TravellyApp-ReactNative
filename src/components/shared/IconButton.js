@@ -5,7 +5,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 const IconButton = ({ icon, onPress, styles, iconColor, size }) => {
   return (
     <Pressable
-      className={`p-5 bg-peach300 rounded-3xl ${styles}`}
+      className={`p-5 bg-peach300 items-center rounded-3xl ${styles}`}
       onPress={onPress}
     >
       <MaterialCommunityIcons name={icon} size={size} color={iconColor} />
