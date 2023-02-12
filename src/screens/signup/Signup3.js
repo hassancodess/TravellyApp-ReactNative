@@ -9,7 +9,7 @@ const Signup3 = () => {
   return (
     <Container styles='justify-between'>
       <View className='flex-col items-center w-full '>
-        <View className='mb-16'>
+        <View className='mb-8'>
           {/* Lines Container*/}
           <View className={`flex-row overflow-hidden justify-center`}>
             <Line variant={'primary4'} />

@@ -18,7 +18,7 @@ const Signup1 = () => {
   return (
     <Container styles='justify-between'>
       <View className='flex flex-col items-center '>
-        <View className='mb-16'>
+        <View className='mb-8'>
           {/* Lines Container*/}
           <View className={`flex-row overflow-hidden justify-center`}>
             <Line variant={'primary4'} />
