@@ -2,8 +2,6 @@ import React from 'react'
 import { View } from 'react-native'
 import { styled } from 'nativewind'
 
-const StyledView = styled(View)
-
 const Line = ({ variant }) => {
   const variantStyles = {
     default: 'bg-white w-[33%]',
@@ -13,9 +11,7 @@ const Line = ({ variant }) => {
     secondary4: 'bg-secondary/100 w-[25%] ml-3',
   }
   return (
-    <StyledView
-      className={`h-0.5 rounded-full ${variantStyles[variant]}`}
-    ></StyledView>
+    <View className={`h-0.5 rounded-full ${variantStyles[variant]}`}></View>
   )
 }
 
