@@ -1,22 +1,19 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
-import Illustration from '../../assets/illustrations/onboarding/Illustration-1.png'
-// Components
-import Line from '../../components/onboarding/Line'
+import Illustration from '../../../assets/illustrations/onboarding/Illustration-2.png'
 // Navigation
 import { useNavigation } from '@react-navigation/native'
-
-const OnboardingScreen1 = () => {
+const OnboardingScreen2 = () => {
   const navigation = useNavigation()
   const navigateToNextScreen = () => {
-    navigation.navigate('Onboarding2')
+    navigation.navigate('Onboarding3')
   }
   return (
     <View className='flex-1 flex-col justify-between items-center px-4 my-10'>
       {/* Lines */}
       <View className='flex-row gap-x-1 items-center overflow-hidden'>
-        <View className='h-1 w-1/3 bg-primary rounded-full'></View>
         <View className='h-1 w-1/3 bg-secondary/30 rounded-full'></View>
+        <View className='h-1 w-1/3 bg-primary rounded-full'></View>
         <View className='h-1 w-1/3 bg-secondary/30 rounded-full'></View>
       </View>
       {/* Illustration */}
@@ -36,6 +33,6 @@ const OnboardingScreen1 = () => {
   )
 }
 
-export default OnboardingScreen1
+export default OnboardingScreen2
 
 const styles = StyleSheet.create({})

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, Pressable } from 'react-native'
+import { Text, View } from 'react-native'
 // Components
 import Container from '../../components/shared/Container'
 import Line from '../../components/onboarding/Line'
@@ -8,10 +8,11 @@ import IconButton from '../../components/shared/IconButton'
 import { Entypo } from '@expo/vector-icons'
 // Constants
 import { colors } from '../../assets/Constants'
+
 const Signup1 = () => (
   <Container styles='justify-between'>
     <View className='flex flex-col items-center '>
-      <View className='mb-16'>
+      <View className='mb-16 bg-green'>
         {/* Lines Container*/}
         <View className={`flex-row overflow-hidden justify-center`}>
           <Line variant={'primary4'} />

@@ -1,11 +1,11 @@
 import { useCallback } from 'react'
 import { StatusBar } from 'expo-status-bar'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 import { useFonts } from 'expo-font'
 import * as SplashScreen from 'expo-splash-screen'
 import { NavigationContainer } from '@react-navigation/native'
 // Navigators
-import MainNavigator from './navigators/MainNavigator'
+import MainNavigator from './src/navigators/MainNavigator'
 
 SplashScreen.preventAutoHideAsync()
 
