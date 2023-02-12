@@ -33,12 +33,7 @@ const Signup1 = () => (
       </View>
       {/* Buttons */}
       <View className='flex flex-row justify-center'>
-        <IconButton
-          icon='phone'
-          size={40}
-          styles={'items-center'}
-          iconColor={colors.white}
-        />
+        <IconButton icon='phone' size={40} iconColor={colors.white} />
         <IconButton
           icon='email'
           size={40}
@@ -59,21 +54,21 @@ const Signup1 = () => (
       <View className='flex flex-row items-center mb-8'>
         <IconButton
           icon='facebook'
-          styles='w-20 bg-white p-5 items-center'
+          styles='bg-white'
           iconColor={colors.peach300}
           size={40}
         />
         <IconButton
           icon='google'
-          styles='w-20 bg-white p-5 mx-10 items-center'
+          styles='bg-white mx-10'
           iconColor={colors.peach300}
           size={40}
         />
         <IconButton
           icon='apple'
-          styles='w-20 bg-white p-5 items-center'
+          styles='bg-white'
           iconColor={colors.peach300}
-          size={42}
+          size={40}
         />
       </View>
       {/* Text */}
