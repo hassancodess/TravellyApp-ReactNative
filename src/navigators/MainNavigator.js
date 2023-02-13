@@ -3,19 +3,21 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 // Navigators
 import OnboardingNavigator from './onboarding/OnboardingNavigator'
 import SignupNavigator from './signup/SignupNavigator'
+import DashboardNavigator from './dashboard/DashboardNavigator'
 
-const Stack = createNativeStackNavigator()
+const { Navigator, Screen } = createNativeStackNavigator()
 const MainNavigator = () => {
   return (
-    <Stack.Navigator
+    <Navigator
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName='Signup'
+      initialRouteName='Dashboard'
     >
-      <Stack.Screen name='Onboarding' component={OnboardingNavigator} />
-      <Stack.Screen name='Signup' component={SignupNavigator} />
-    </Stack.Navigator>
+      <Screen name='Onboarding' component={OnboardingNavigator} />
+      <Screen name='Signup' component={SignupNavigator} />
+      <Screen name='Dashboard' component={DashboardNavigator} />
+    </Navigator>
   )
 }
 
