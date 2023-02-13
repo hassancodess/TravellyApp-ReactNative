@@ -12,7 +12,7 @@ const SignupNavigator = () => {
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName='Signup2'
+      initialRouteName='Signup1'
     >
       <Stack.Screen name='Signup1' component={Signup1} />
       <Stack.Screen name='Signup2' component={Signup2} />
