@@ -9,7 +9,7 @@ const { Navigator, Screen } = createNativeStackNavigator()
 
 const DashboardNavigator = () => {
   return (
-    <Navigator initialRouteName='Home'>
+    <Navigator initialRouteName='Home' screenOptions={{ headerShown: false }}>
       <Screen name='Home' component={Home} />
       <Screen name='Booking' component={Booking} />
       <Screen name='Notifications' component={Notifications} />
